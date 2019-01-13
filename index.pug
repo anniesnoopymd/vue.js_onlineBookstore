@@ -1,0 +1,11 @@
+#app
+   h1 使用Vue.js計算呈現資訊/v-if
+   h3 實戰博客來排行榜資料轉換html
+      span
+         img.bkl_icon(src="https://www.bookrep.com.tw/webroot/file/add_ebook/_pic_ebook_image_1511340728.jpg")
+         
+         
+   .book(v-for="book in books")
+      img(src="{{book.image}}")
+      .infos
+         h2.name {{book.price}}
